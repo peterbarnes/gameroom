@@ -1,6 +1,7 @@
 class Gameroom < Sinatra::Base
   
   get '/' do
+    @widgets = Widget.all
     erb :index, :layout => :layout
   end
 
@@ -15,6 +16,12 @@ class Gameroom < Sinatra::Base
   get '/index' do
     redirect "/"
   end
+  
+  get '/delete' do
+    @widget = Widget.find(params[:id])
+    @widget.destroy
+    redirect '/'
+  end
 
   get '/products' do
     erb :products, :layout => :layout
@@ -24,7 +31,8 @@ class Gameroom < Sinatra::Base
     erb :about, :layout => :layout
   end
 
-  post '/contact' do
-    "I'm here"
+  post '/create' do
+    @widget = Widget.create(:name => params[:name])
+    redirect '/'
   end
 end

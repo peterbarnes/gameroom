@@ -57,3 +57,8 @@ p.intro {
 	font-style: oblique;
 	text-align: center;
 }
+
+.del {
+  font-weight: bold;
+  font-style: oblique;
+}
