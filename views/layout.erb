@@ -13,10 +13,11 @@
 	<ul>
 		<li class = "imp">Game<b>room</b></li>
 		<li id = "navi" class = "<%= "selected" if request.path_info == "/" %>"><a href = "/">Home</a></li>
+    <li id = "navi" class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
 		<li id = "navi" class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
 		<li id = "navi" class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
 		<li id = "navi" class = "<%= "selected" if request.path_info == "/about" %>"><a href = "/about">About</a></li>
-		<li id = "navi" class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
+		
 	</ul>
 </div>
 <%= yield %>
