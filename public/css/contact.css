@@ -41,12 +41,24 @@ li.imp {
 	left: 0px;
 }
 
-#downtown, #south {
+.hiddend, .hidden {
 	background-color: #efefef;
-	float: left;
-	width: 460px;
+	width: 940px;
 	margin: 5px;
 	padding: 5px;
+  display: none;
+}
+
+.headingd, .heading {
+  font-weight: bold;
+  font-style: oblique;
+  color: black;
+  width: 940px;
+  margin: 5px;
+  padding: 5px;
+  background color: #efefef;
+  text-align: center;
+  
 }
 
 a {
@@ -56,4 +68,16 @@ a {
 
 b {
 	color: #7a1f9c;
+}
+
+#downtown, #south {
+  width: 940px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #efefef;
+  
+}
+
+.hour {
+  float: left;
 }
