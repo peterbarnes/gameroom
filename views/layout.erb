@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Gameroom
+	</title>
+	<link href = "/css/home.css" type = "text/css" rel = "stylesheet">
+  <link href = "/css/services.css" type = "text/css" rel = "stylesheet">
+  <link href = "/css/products.css" type = "text/css" rel = "stylesheet">
+  <link href = "/css/contact.css" type = "text/css" rel = "stylesheet">
+</head>
+<body>
+<div id = "navbar">
+	<ul>
+		<li class = "imp">Game<b>room</b></li>
+		<li id = "navi"><a href = "/">Home</a></li>
+		<li id = "navi"><a href = "/products">Products</a></li>
+		<li id = "navi"><a href = "/services">Services</a></li>
+		<li id = "navi"><a href = "/about">About</a></li>
+		<li id = "navi" class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Contact</a></li>
+	</ul>
+</div>
+<%= yield %>
+</body>
