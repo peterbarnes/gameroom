@@ -41,10 +41,11 @@ b {
 }
 
 #repair, #sell, #discs {
-  overflow: auto;
+  overflow: hidden;
   margin: 5px;
   padding: 5px;
   background-color: #efefef;
+  width: 940px;
   
 }
 
