@@ -1,4 +1,11 @@
 class Gameroom < Sinatra::Base
+  get "/search" do
+    resource = RestClient::Resource.new( "http://gameroom.cashierapp.com/api/users?search=#{params[:query]}", { :user => 'x', :password => 'ea3d2470e65b0130f5493e1edbff447e'})
+    response = resource.get
+    @results = JSON.parse(response.to_str)
+   
+     erb :search
+  end
   
   get '/' do
     @widgets = Widget.all

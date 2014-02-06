@@ -1,26 +1,56 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>
 		Gameroom
 	</title>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content = "yes">
+  <meta name = "viewport" content="width=device-width, inital-scale=1">
+  <meta name="description" content="Gameroom">
+  <meta name="author" content="Gameroom">
+  <link href="/foundation-5.1.0/css/normalize.css" type="text/css" rel="stylesheet">
+  <link href="/foundation-5.1.0/css/foundation.min.css" type="text/css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
-	<link href = "/css/home.css" type = "text/css" rel = "stylesheet">
-  <link href = "/css/services.css" type = "text/css" rel = "stylesheet">
-  <link href = "/css/products.css" type = "text/css" rel = "stylesheet">
-  <link href = "/css/contact.css" type = "text/css" rel = "stylesheet">
   <script src="/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
-<div id = "navbar">
-	<ul>
-		<li class = "imp">Game<b>room</b></li>
-		<li id = "navi" class = "<%= "selected" if request.path_info == "/" %>"><a href = "/">Home</a></li>
-    <li id = "navi" class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
-		<li id = "navi" class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
-		<li id = "navi" class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
-		<li id = "navi" class = "<%= "selected" if request.path_info == "/about" %>"><a href = "/about">About</a></li>
-		
-	</ul>
-</div>
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Gameroom</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    		
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-form">
+          <form id="search" action="/search" method="get">
+            <div class="row collapse">
+              <div class="large-8 small-9 columns">
+                <input name="query" type="text" placeholder="Find Stuff">
+              </div>
+              <div class="large-4 small-3 columns">
+                <button type="submit" value="submit" class="button">Search</button>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+    		<li   class = "<%= "selected" if request.path_info == "/" %>"><a href = "/">Home</a></li>
+        <li   class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
+    		<li   class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
+    		<li    class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
+    		<li    class = "<%= "selected" if request.path_info == "/about" %>"><a href = "/about">About</a></li>
+      </ul>
+    </section>
+  </nav>
 <%= yield %>
 </body>
+</html>

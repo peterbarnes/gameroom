@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler'
+require 'net/http'
 
 ENV['RACK_ENV'] ||= 'development'
 
