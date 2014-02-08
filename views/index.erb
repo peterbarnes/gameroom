@@ -1,18 +1,7 @@
 
 	<div id = "content">
 		<div id = "feature">
-      <% @widgets.each do |widget| %>
-  			<p><%= widget.id %></p>
-        <p><%= widget.name %></p>
-        <p><%= widget.created_at %></p>
-        <p><%= widget.updated_at %></p>
-        <p><%= widget.data %></p>
-        <a href = "/delete?id=<%= widget.id %>" class = "del">Delete</a>
-      <% end %>
-      <form action="/create" method= "post">
-        <input name="name" type="text" />
-        <input type="submit" value="Save" />
-      </form>
+      <p>feature</p>
 		</div>
 		<div class = "article column1">
 			<p class = "intro">We fix broken electronics</p>
