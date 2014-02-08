@@ -11,6 +11,8 @@
   <meta name="author" content="Gameroom">
   <link href="/foundation-5.1.0/css/normalize.css" type="text/css" rel="stylesheet">
   <link href="/foundation-5.1.0/css/foundation.min.css" type="text/css" rel="stylesheet">
+  <script src="foundation-5.1.0/js/vendor/modernizr.js"></script>
+  <script src="foundation-5.1.0/js/foundation.min.js"></script>
   <script src="/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
@@ -48,5 +50,10 @@
     </section>
   </nav>
 <%= yield %>
+<script src="foundation-5.1.0/js/vendor/jquery.js"></script>
+<script src="foundation-5.1.0/js/vendor/fastclick.js"></script>
+<script>
+$(document).foundation();
+</script>
 </body>
 </html>

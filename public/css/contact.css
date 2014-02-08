@@ -72,8 +72,8 @@ b {
 }
 
 #downtown, #south {
-  width: 940px;
-  margin: 5px;
+  width: 100%;
+  margin: 0 auto;
   padding: 5px;
   background-color: #efefef;
   
