@@ -6,13 +6,11 @@
 	</title>
   <meta charset="utf-8">
   <meta name="apple-mobile-web-app-capable" content = "yes">
-  <meta name = "viewport" content="width=device-width, inital-scale=1">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
   <meta name="description" content="Gameroom">
   <meta name="author" content="Gameroom">
   <link href="/foundation-5.1.0/css/normalize.css" type="text/css" rel="stylesheet">
   <link href="/foundation-5.1.0/css/foundation.min.css" type="text/css" rel="stylesheet">
-  <script src="foundation-5.1.0/js/vendor/modernizr.js"></script>
-  <script src="foundation-5.1.0/js/foundation.min.js"></script>
   <script src="/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
@@ -41,7 +39,6 @@
       </ul>
       <!-- Left Nav Section -->
       <ul class="left">
-    		
         <li class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
     		<li class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
     		<li class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
@@ -50,10 +47,5 @@
     </section>
   </nav>
 <%= yield %>
-<script src="foundation-5.1.0/js/vendor/jquery.js"></script>
-<script src="foundation-5.1.0/js/vendor/fastclick.js"></script>
-<script>
-$(document).foundation();
-</script>
 </body>
 </html>

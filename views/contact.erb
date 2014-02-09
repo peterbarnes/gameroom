@@ -1,73 +1,36 @@
-<style>
-.hiddend, .hidden {
-	background-color: #efefef;
-	width: 100%;
-	margin: 5px;
-	padding: 5px;
-  display: none;
-}
 
-#downtown, #south {
-  width: 100%;
-  margin: 5px;
-  padding: 5px;
-  background-color: #efefef;
-}
-
-.hour {
-  float: left;
-}
-</style>
-<script>
-$(document).ready(function() {
-  $('.headingd').click(function() {
-    $('.hiddend').slideToggle(400);
-  }); // end click
-}); // end ready
-$(document).ready(function() {
- $('.heading').click(function() {
-   $('.hidden').slideToggle(400);
- }); // end click 
-}); // end ready
-</script>
-<div id = "downtown">
-    <p class = "headingd">Gameroom Downtown | (402)-438-7161</p>
-  </div>
-		<div class = "hiddend">
-			<p class = "address">1713 O St Lincoln, NE 68508</p>
-			<p class = "hours">
-				<ul class= "hour">
-					<li class = "hr">Monday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Tuesday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Wednesday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Thursday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Friday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Saturday: 11 A.M. - 9 P.M.</li>
-					<li class = "hr">Sunday: 11 A.M. - 9 P.M.</li>
-				</ul>
+<dl class="accordion" data-accordion>
+  <dd>
+    <a href="#store1">Gameroom Downtown | (402)-438-7161</a>
+    <div id="store1">
+      <div id="hidden">
+        <ul class="hours">
+          <li>Monday | 11:00 PM - 9 PM</li>
+          <li>Tuesday | 11:00 PM - 9 PM</li>
+          <li>Wednesday | 11:00 PM - 9 PM</li>
+          <li>Thursday | 11:00 PM - 9 PM</li>
+          <li>Friday | 11:00 PM - 9 PM</li>
+          <li>Saturday | 11:00 PM - 9 PM</li>
+          <li>Sunday | 11:00 PM - 9 PM</li>
+        </ul>
         <div class="map">
-				<iframe width="625" height="200" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Gameroom,+O+Street,+Lincoln,+NE&amp;aq=1&amp;oq=gameroom+&amp;sll=40.800609,-96.690728&amp;sspn=0.324862,0.614548&amp;ie=UTF8&amp;hq=The+Gameroom,&amp;hnear=O+St,+Lincoln,+Nebraska&amp;t=m&amp;ll=40.800816,-96.690674&amp;spn=0.103956,0.191574&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=The+Gameroom,+O+Street,+Lincoln,+NE&amp;aq=1&amp;oq=gameroom+&amp;sll=40.800609,-96.690728&amp;sspn=0.324862,0.614548&amp;ie=UTF8&amp;hq=The+Gameroom,&amp;hnear=O+St,+Lincoln,+Nebraska&amp;t=m&amp;ll=40.800816,-96.690674&amp;spn=0.103956,0.191574&amp;z=11&amp;iwloc=A" style="color:#0000FF;text-align:left" target = 'blank'>View Larger Map (Opens in new window)</a></small></div>
-			</p>
-		</div>
-    <div id="south">
-    <p class = "heading">Gameroom South | (402)-421-0935</p>
-  </div>
-		<div class = "hidden">
-			<p class = "address">5400 S 56th St #9, Lincoln NE, 68516</p>
-			<p class = "hours">
-				<ul class="hour">
-					<li class = "hr">Monday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Tuesday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Wednesday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Thursday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Friday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Saturday: 11:30 A.M. - 8:30 P.M.</li>
-					<li class = "hr">Sunday: 11:30 A.M. - 8:30 P.M.</li>
-				</ul>
-				<iframe width="600" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Game+Room,+South+56th+Street+%239,+Lincoln,+NE&amp;aq=0&amp;oq=gameroom+&amp;sll=40.758522,-96.64042&amp;sspn=0.007119,0.013797&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=40.759854,-96.64042&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Game+Room,+South+56th+Street+%239,+Lincoln,+NE&amp;aq=0&amp;oq=gameroom+&amp;sll=40.758522,-96.64042&amp;sspn=0.007119,0.013797&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=40.759854,-96.64042&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A" style="color:#0000FF;text-align:left" target = "blank">View Larger Map (Opens in new window)</a></small>
-			</p>
-		</div>	
+          <iframe    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.6580494106083!2d-96.69629355!3d40.81350749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8796befa9bdc23af%3A0x9e3f38d758bd8e91!2sThe+Gameroom!5e0!3m2!1sen!2sus!4v1391921737848" width="600" height="200" frameborder="0" style="border:0"></iframe>  
+        </div>
+      </div>   
+  </dd>
+  <dd>
+    <a href="#panel2">Accordion 2</a>
+    <div id="panel2" class="content">
+      Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </dd>
+  <dd>
+    <a href="#panel3">Accordion 3</a>
+    <div id="panel3" class="content">
+      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </dd>
+</dl>
 			<div id = "footer">
 				<p> &copy Copyright 2013</p>
 		</div>
-    
