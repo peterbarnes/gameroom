@@ -2,10 +2,10 @@
 .main h3 {
   font-size: 20px;
   background-color: #d1d1d1;
-  margin: 0 auto;
   padding: 5px;
   height: 45px;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .details {
@@ -27,7 +27,12 @@
 }
 </style>
 <script>
-
+$(document).ready(function() {
+  $('.details').hide();
+  $('.main h3').click(function() {
+    $(this).next('.details').slideToggle(400);
+  });//end click
+});//end ready
 </script>
 <div class="content">
   <div class="main">
@@ -52,8 +57,6 @@
       <img src="/images/downtownfront.jpg" width=280 heigth=200>
     </div>
    </div>
-  </div>
-  <div class="main">
     <h3>Gameroom South | (402)-421-0935</h3>
     <div class="details">
       <div class="address">5400 S 56th St #9, Lincoln, NE 68516</div>
@@ -72,7 +75,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.0798605945827!2d-96.64233389999997!3d40.75851164999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87969622d3fdf0c3%3A0xae4673310be16c0c!2sGameroom!5e0!3m2!1sen!2sus!4v1392008397502" width="500" height="200" frameborder="0" style="border:0"></iframe>
       </div>
       <div class="image">
-        <img src="/images/southfront.jpg" width=280 heigth=200>
+        <img src="/images/southfront.jpg" width=220 heigth=200>
       </div>
     </div>
   </div>
