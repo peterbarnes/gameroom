@@ -1,22 +1,25 @@
 <style>
 .main h3 {
-  font-size: 20px;
-  background-color: #d1d1d1;
-  padding: 10px;
+  font-size: 19px;
+  background-color: #d1d1d1 !important;
+  padding: 7px 10px 20px 20px;
   height: 45px;
   cursor: pointer;
   margin: 0;
   transition: background-color 150ms ease-out;
-  border-style: solid;
-  border-width: 1px;
+  background: url(/images/close.png) no-repeat 0 11px ;
 }
 
 .main h3:hover {
-  background-color: #a8a8a8;
+  background-color: #a8a8a8 !important;
 }
 
 .main h3:active {
-  background-color: #696969;
+  background-color: #696969 !important;
+}
+
+h3.open {
+  background-image: url(/images/open.png);
 }
 
 .details {
@@ -41,7 +44,7 @@ ul {
   list-style: none;
 }
 </style>
-<script>
+<script>//This function shows and hides details about each store
 $(document).ready(function() {
   $('.details').hide();
   $('.main h3').click(function() {
