@@ -38,7 +38,7 @@ class Gameroom < Sinatra::Base
   get '/about' do
     erb :about, :layout => :layout
   end
-
+  
   post '/create' do
     @widget = Widget.create(:name => params[:name])
     redirect '/'
