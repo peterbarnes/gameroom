@@ -1,0 +1,31 @@
+* {
+font-family: 'Open Sans' !important;  
+}
+
+body {
+  background-color: #d1d1d1;
+}
+
+input[type="text"], button {
+  height: 29px;
+}
+
+.button {
+  background-color: #A30090;
+}
+
+.button:hover {
+  background-color: #00E81B;
+}
+  
+.title-area {
+  transition: background-color 300ms ease-out;
+}
+
+.title-area:hover {
+  background-color: #A30090;
+}
+
+ul {
+  list-style: none;
+}
