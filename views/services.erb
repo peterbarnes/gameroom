@@ -1,1 +1,48 @@
-<h1>Opps! You've stumbled into our construction area!</h1>
+<style>
+.inside {
+  padding: 10px;
+}
+p.head {
+  font-size: 25px;
+}
+.service {
+  width: 350px;
+}
+</style>
+<div class="service">
+<div class="repairs">
+  <p class="head">Repairs</p>
+  <ul class="repairs">
+    <li>Consoles</li>
+    <li>Computers</li>
+    <li>Laptops</li>
+    <li>Phones</li>
+    <li>iPods</li>
+    <li>Tablets</li>
+  </ul>
+</div>
+<div class="disc">
+  <p class="head">Disc Cleaning</p>
+  <ul class="discs">
+    <li>One-Sided</li>
+    <li>Double-Sided</li>
+    <li>Gamecube</li>
+  </ul>
+</div>
+<div class="selling">
+  <p class="head">Selling/Trading</p>
+  <ul class="bst">
+    <li>Cash</li>
+    <li>Store-Credit</li>
+  </ul>
+</div>
+<div class="vol">
+  <p class="head">Volunteering</p>
+  <ul class="volu">
+    <li>Click here to learn more about our volunteer program!</li>
+  </ul>
+</div>
+<div class="end <%= "selected" if request.path_info == "/contact" %>">
+  <a href="/contact"><p>Questions?  Call either store for more details!</p></a>
+</div>
+</div>

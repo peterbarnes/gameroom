@@ -35,3 +35,6 @@ ul {
 .content {
   height: 100%;
 }
+a, a:hover {
+  color: #000000;
+}
