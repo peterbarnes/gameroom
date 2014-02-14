@@ -1,19 +1,38 @@
 <style>
 .inside {
-  padding: 10px;
+  padding: 20px;
 }
 p.head {
   font-size: 25px;
+  margin: 0;
+  cursor: pointer;
 }
 .service {
-  width: 350px;
+  width: 450px;
+}
+.end {
+  margin-bottom: 0;
+}
+.info li { 
+  cursor: pointer;
 }
 </style>
+<script>
+$(document).ready(function() {
+  $('.info').hide();
+  $('p.head').click(function() {
+    $(this).next('.info').slideToggle(400);
+  });//end click
+});//end ready
+</script>
 <div class="service">
 <div class="repairs">
   <p class="head">Repairs</p>
-  <ul class="repairs">
+  <ul class="info">
     <li>Consoles</li>
+    <div class="subinf">
+      <p>Consoles and console shit</p>
+    </div>
     <li>Computers</li>
     <li>Laptops</li>
     <li>Phones</li>
@@ -23,7 +42,7 @@ p.head {
 </div>
 <div class="disc">
   <p class="head">Disc Cleaning</p>
-  <ul class="discs">
+  <ul class="info">
     <li>One-Sided</li>
     <li>Double-Sided</li>
     <li>Gamecube</li>
@@ -31,14 +50,14 @@ p.head {
 </div>
 <div class="selling">
   <p class="head">Selling/Trading</p>
-  <ul class="bst">
+  <ul class="info">
     <li>Cash</li>
     <li>Store-Credit</li>
   </ul>
 </div>
 <div class="vol">
   <p class="head">Volunteering</p>
-  <ul class="volu">
+  <ul class="info">
     <li>Click here to learn more about our volunteer program!</li>
   </ul>
 </div>
