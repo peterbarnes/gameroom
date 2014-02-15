@@ -1,48 +1,40 @@
 <style>
-.inside {
-  padding: 20px;
-}
-p.head {
-  font-size: 25px;
-  margin: 0;
+.details li {
   cursor: pointer;
+  background: url(/images/close.png) no-repeat 0 4px;
+  padding-left: 18px;
 }
-.service {
-  width: 450px;
-  float: left;
-}
-.end {
-  margin-bottom: 0;
+.details {
+  width: 400px;
 }
 </style>
-<div class="service">
-<div class="repairs">
-  <p class="head">Repairs</p>
-  <div class="info">
-    <a href='#'>Consoles</a>
+<div class="main">
+  <h3>Repairs</h3>
+  <div class="details">
+    <ul>
+      <li>Consoles</li>
+      <li>Computers</li>
+      <li>Laptops</li>
+      <li>Phones</li>
+      <li>iPods</li>
+      <li>Tablets</li>
+    </ul>
   </div>
-</div>
-<div class="disc">
-  <p class="head">Disc Cleaning</p>
-  <ul class="info">
-    <li>One-Sided</li>
-    <li>Double-Sided</li>
-    <li>Gamecube</li>
-  </ul>
-</div>
-<div class="selling">
-  <p class="head">Selling/Trading</p>
-  <ul class="info">
-    <li>Cash</li>
-    <li>Store-Credit</li>
-  </ul>
-</div>
-<div class="vol">
-  <p class="head">Volunteering</p>
-  <ul class="info">
-    <li>Click here to learn more about our volunteer program!</li>
-  </ul>
-</div>
+  <h3>Disc Cleaning</h3>
+  <div class="details">
+    <ul>
+      <li>One-sided</li>
+      <li>Double-sided</li>
+      <li>Gamecube</li>
+    </ul>
+  </div>
+  <h3>Selling/Trading</h3>
+  <div class="details">
+    <ul>
+      <li>Cash</li>
+      <li>Store Credit</li>
+    </ul>
+  </div>
 <div class="end <%= "selected" if request.path_info == "/contact" %>">
   <a href="/contact"><p>Questions?  Call either store for more details!</p></a>
 </div>
