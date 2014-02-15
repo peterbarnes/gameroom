@@ -7,17 +7,35 @@
 .details {
   width: 400px;
 }
+li.open {
+  background: url(/images/open.png) no-repeat 0 4px;
+}
 </style>
+<script>
+$(document).ready(function() {
+  $(".subinf p").hide();
+  $('.subinf li').click(function() {
+    $(this).toggleClass('open');
+    $(this).next('.subinf p').slideToggle(400);
+  });
+});
+</script>
 <div class="main">
   <h3>Repairs</h3>
   <div class="details">
-    <ul>
+    <ul class="subinf">
       <li>Consoles</li>
+      <p>Console info</p>
       <li>Computers</li>
+      <p>Computer info</p>
       <li>Laptops</li>
+      <p>Laptop info</p>
       <li>Phones</li>
+      <p>Phones info</p>
       <li>iPods</li>
+      <p>iPods</p>
       <li>Tablets</li>
+      <p>Tablets</p>
     </ul>
   </div>
   <h3>Disc Cleaning</h3>
