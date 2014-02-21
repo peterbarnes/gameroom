@@ -1,7 +1,7 @@
 * {
 font-family: 'Open Sans' !important;  
 }
-body {
+html, body {
   background-color: #d1d1d1;
 }
 input[type="text"], button {
@@ -24,7 +24,7 @@ ul {
 }
 .inside {
   width: 1000px;
-  height: 1000px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #ebebeb;
@@ -34,7 +34,7 @@ ul {
   padding-top: 45px;
 }
 .content {
-  height: 1000px;
+
 }
 a, a:hover {
   color: #000000;
