@@ -9,6 +9,7 @@ input[type="text"], button {
 }
 .button {
   background-color: #A30090;
+  line-height: 100%;
 }
 .button:hover {
   background-color: #00E81B;
@@ -65,7 +66,6 @@ h3.open {
   margin: 0 auto;
 }
 .top-bar {
-  position: fixed;
   width: 100%;
   overflow: visible;
 }
