@@ -3,7 +3,9 @@
   float:left;
 }
 .searchbar {
- 
+  padding: 10px;
+  padding-left: 27px;
+  padding-top: 20px;
 }
 .searchbar input[type="text"] {
   height: 40px;
@@ -12,18 +14,24 @@
 .searchbar button[type="submit"] {
   height: 40px;
   line-height: 100%;
-}
-.btn {
   margin-right: 0;
 }
 </style>
 <div class="searchbar">
   <form>
     <div class="in">
-    <input name="init" type="text" placeholder="Find games, consoles, accesories, services, and more">
+    <input name="query" type="text" placeholder="Find games, consoles, accesories, services, and more">
   </div>
   <div class="btn">
-    <button type="submit" value="submit" class="searchbtn">Go!</button>
+    <button type="submit" value="submit" class="button">Go!</button>
   </div>
   </form>
 </div>
+<ul>
+  <% @results["users"].each do |user| %>
+    <li class="person">
+      <%= user["first_name"] %> <%= user["last_name"] %>
+      <img src="<%= user["gravatar_url"] %>" />
+    </li>
+  <% end %>
+</ul>
