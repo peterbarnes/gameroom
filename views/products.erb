@@ -2,10 +2,16 @@
 .result {
   padding: 20px 10px 10px 10px; 
 }
+.item {
+  padding: 5px;
+  border-bottom: 1px solid #8f8f8f;
+  box-shadow: 0 1px 2px -1px #bdbdbd;
+  
+}
 </style>
 <ul class="result">
   <% @results["users"].each do |user| %>
-    <li class="person">
+    <li class="item">
       <img src="<%= user["gravatar_url"] %>" />
       <%= user["first_name"] %> <%= user["last_name"] %>
     </li>
