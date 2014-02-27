@@ -1,39 +1,13 @@
 <style>
-.in {
-  float:left;
-  display:inline;
-}
 .result {
-  padding-top: 70px;
-}
-.searchbar {
-  padding: 10px;
-  padding-left: 27px;
-  padding-top: 20px;
-  position:fixed;
-}
-.searchbar input[type="text"] {
-  height: 40px;
-  width: 850px;
-}
-.searchbar button[type="submit"] {
-  height: 40px;
-  line-height: 100%;
+  padding: 20px 10px 10px 10px; 
 }
 </style>
-<div class="searchbar">
-  <form id="search" action="/products" method="get">
-    <div class="in">
-    <input name="query" type="text" placeholder="Find games, consoles, accesories, services, and more">
-  </div>
-  <button type="submit" value="submit" class="button">Go!</button>
-  </form>
-</div>
 <ul class="result">
   <% @results["users"].each do |user| %>
     <li class="person">
-      <%= user["first_name"] %> <%= user["last_name"] %>
       <img src="<%= user["gravatar_url"] %>" />
+      <%= user["first_name"] %> <%= user["last_name"] %>
     </li>
   <% end %>
 </ul>

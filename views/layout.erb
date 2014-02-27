@@ -15,6 +15,19 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script src="/js/jquery-1.10.2.min.js"></script>
   <script src="/js/site.js"></script>
+  <style>
+  .in {
+    float:left;
+  }
+  .indexsearch input[type="text"] {
+    height: 29px;
+    width: 440px;
+  }
+  .indexsearch.searchbar button[type="submit"] {
+    height: 29px;
+    line-height: 100%;
+  }
+  </style>
 </head>
 <body>
   <nav class="top-bar" data-topbar>
@@ -27,24 +40,22 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
+        <div class="indexsearch">
+          <form id="search" action="/products" method="get">
+            <div class="in">
+            <input name="query" type="text" placeholder="Find games, consoles, accesories, services, and more">
+          </div>
+          <button type="submit" value="submit" class="button">Go!</button>
+          </form>
+        </div>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
         <li class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
     		<li class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
     		<li class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
     		<li class = "<%= "selected" if request.path_info == "/about" %>"><a href = "/about">About</a></li>
-        <li class="has-form">
-          <form id="search" action="/products" method="get">
-            <div class="row collapse">
-              <div class="large-8 small-9 columns">
-                <input name="query" type="text" placeholder="Find Stuff">
-              </div>
-              <div class="large-4 small-3 columns">
-                <button type="submit" value="submit" class="button">Search</button>
-              </div>
-            </div>
-          </form>
-        </li>
       </ul>
-      <!-- Left Nav Section -->
     </section>
   </div>
   </nav>
