@@ -10,14 +10,17 @@ input[type="text"] {
   border-top-left-radius: 5px;
 }
 .button {
-  background-color: #A30090;
-  line-height: 100%;
+  background-color: #A30090 !important;
   height: 29px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  width: 33px;
+  padding: 0px;
+  line-height:100%;
+  background: url(/images/searchicon.png) no-repeat;
 }
 .button:hover {
-  background-color: #00E81B;
+  background-color: #00E81B !important;
 } 
 .title-area {
   transition: background-color 300ms ease-out;
