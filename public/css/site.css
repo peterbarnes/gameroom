@@ -79,3 +79,14 @@ h3.open {
   width: 100%;
   overflow: visible;
 }
+.in {
+  float:left;
+}
+.indexsearch input[type="text"] {
+  height: 29px;
+  width: 490px;
+}
+.indexsearch.searchbar button[type="submit"] {
+  height: 29px;
+  line-height: 100%;
+}
