@@ -14,10 +14,10 @@ input[type="text"] {
   height: 29px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
-  width: 33px;
+  width: 67px;
   padding: 0px;
   line-height:100%;
-  background: url(/images/searchicon.png) no-repeat;
+  background: url(/images/searchicon.png) no-repeat center;
 }
 .button:hover {
   background-color: #00E81B !important;
@@ -84,7 +84,7 @@ h3.open {
 }
 .indexsearch input[type="text"] {
   height: 29px;
-  width: 490px;
+  width: 456px;
 }
 .indexsearch.searchbar button[type="submit"] {
   height: 29px;
