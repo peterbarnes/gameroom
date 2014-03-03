@@ -81,6 +81,7 @@ h3.open {
 }
 .in {
   float:left;
+  height: 29px;
 }
 .indexsearch input[type="text"] {
   height: 29px;
