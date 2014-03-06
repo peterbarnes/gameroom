@@ -1234,7 +1234,6 @@ meta.foundation-mq-topbar {
     left: 0 !important; }
     .top-bar-section ul {
       width: auto;
-      height: auto !important;
       display: inline; }
       .top-bar-section ul li {
         float: left; }

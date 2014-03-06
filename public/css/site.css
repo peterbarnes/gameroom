@@ -31,6 +31,12 @@ input[type="text"] {
 ul {
   list-style: none;
 }
+ul.right {
+  height: 45px;
+}
+ul.left {
+  width: 357px;
+}
 .inside {
   width: 1000px;
   height: 100%;
