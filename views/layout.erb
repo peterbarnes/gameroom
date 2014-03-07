@@ -32,7 +32,7 @@
       <!-- Right Nav Section -->
       <ul class="right">
         <div class="indexsearch">
-          <form id="search" action="/products" method="get">
+          <form id="search" action="/search" method="get">
             <div class="in">
             <input name="query" type="text" placeholder="Find games, consoles, accesories, services, and more">
           </div>
@@ -43,7 +43,6 @@
       <!-- Left Nav Section -->
       <ul class="left">
         <li class = "<%= "selected" if request.path_info == "/contact" %>"><a href = "/contact">Locations</a></li>
-    		<li class = "<%= "selected" if request.path_info == "/products" %>"><a href = "/products">Products</a></li>
     		<li class = "<%= "selected" if request.path_info == "/services" %>"><a href = "/services">Services</a></li>
     		<li class = "<%= "selected" if request.path_info == "/about" %>"><a href = "/about">About</a></li>
       </ul>

@@ -1,11 +1,11 @@
 class Gameroom < Sinatra::Base
-  get "/products" do
+  get "/search" do
     password = ENV['API_KEY'] || 'password'
     resource = RestClient::Resource.new( "http://gameroom.cashierapp.com/api/users?search=#{params[:query]}", { :user => 'x', :password => password})
     response = resource.get
     @results = JSON.parse(response.to_str)
    
-     erb :products
+     erb :search
   end
     
   get '/' do
@@ -31,8 +31,8 @@ class Gameroom < Sinatra::Base
     redirect '/'
   end
 
-  get '/products' do
-    erb :products, :layout => :layout
+  get '/search' do
+    erb :search, :layout => :layout
   end
 
   get '/about' do
