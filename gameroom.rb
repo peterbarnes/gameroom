@@ -25,6 +25,10 @@ class Gameroom < Sinatra::Base
     redirect "/"
   end
   
+  get '/wanted' do
+    erb :wanted, :layout => :layout
+  end
+  
   get '/delete' do
     @widget = Widget.find(params[:id])
     @widget.destroy
